@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import DashBoard from "./Components/DashBoard";
+import Header from "./Components/Header";
+import SideBar from "./Components/SideBar";
+import SubDashBoard from "./Components/SubDashBoard";
+import './styles/Main.css'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="main-container">
+        <Header />
+        <div className="right-content">
+          <SideBar />
+          <div className="main-area">
+            <DashBoard />
+            <div className="subdash">
+            <SubDashBoard />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

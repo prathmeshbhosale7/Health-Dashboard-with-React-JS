@@ -1,0 +1,979 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.sidebar ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ----------App JS Design----------- */
+
+.main-area {
+    width: 100%;
+    display: flex;
+    margin-left: 300px;
+}
+
+.right-content {
+    display: flex;
+}
+
+/* ----------------- Header Section ------------------ */
+
+/* ------- Header -------- */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: white;
+    justify-content: space-between;
+    max-width: 1480px;
+    width: 100%;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-right {
+    z-index: 100;
+    display: flex;
+    margin-right: 25px
+}
+
+.brandname {
+    font-size: 30px;
+    z-index: 10;
+    margin-left: 30px;
+    color: rgb(1, 227, 227);
+}
+
+.header span {
+    color: #272795;
+}
+
+/* --------- SeacrhBar ---------- */
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+    margin-left: 80px;
+    max-width: 570px;
+    justify-content: space-between;
+}
+
+.searchbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    outline: none;
+    border: none;
+    padding: 15px;
+    width: 360px;
+    font-size: 17px;
+    min-width: 200px;
+    flex: 1;
+}
+
+.searchbar-left-icon {
+    margin-left: 20px;
+}
+
+.search-bar i {
+    color: #272795;
+    font-size: 20px;
+}
+
+.searchbar-right-icon {
+    border: none;
+    background-color: transparent;
+    padding: 15px;
+}
+
+/* --------- Header Buttons ---------- */
+
+.user-button {
+    display: flex;
+    gap: 20px;
+}
+
+.user-btn {
+    border-radius: 10px;
+    align-content: center;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(1, 227, 227);
+    height: 32px;
+    width: 32px;
+}
+
+.profile-btn {
+    padding: 8px 13px 12px 8px;
+    margin-right: 20px;
+}
+
+.add-btn {
+    background-color: #272795;
+}
+
+.add-btn i {
+    font-size: 25px;
+    color: white;
+}
+
+@media screen and (max-width: 1440px) {
+
+    .search-bar {
+        max-width: 300px;
+        margin-left: 0;
+    }
+
+    .header {
+        /* width: ; */
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-right {
+        margin-top: 10px;
+        margin-right: 0;
+    }
+
+    .brandname {
+        margin-left: 10px;
+    }
+}
+
+
+/* ----------------- End Header Section ------------------ */
+
+/* ----------------- SideBar Section ------------------ */
+
+.sidebar {
+    width: 250px;
+    background-color: #f7f9fc;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: relative;
+    position: absolute;
+    top: 0;
+    height: 1035px;
+    margin: 10px;
+}
+
+.sidebar-title {
+    font-size: 14px;
+    color: rgb(0, 0, 0, 0.3);
+    position: absolute;
+    top: 120px;
+    left: 50px;
+}
+
+.top-sidebar ul {
+    position: absolute;
+    font-size: 16px;
+    top: 160px;
+    left: 10px;
+}
+
+.sidebar .nav-link {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.nav-item {
+    font-weight: 600;
+    color: rgb(35, 35, 103, 0.5);
+}
+
+.sidebar img {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+.tools {
+    top: 430px;
+}
+
+.middle-sidebar ul {
+    position: absolute;
+    top: 470px;
+    left: 10px;
+}
+
+.nav-li {
+    display: flex;
+}
+
+.bottom-sidebar ul {
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+}
+
+.nav-item:hover {
+    color: #272795;
+    transition: ease-in-out 0.4s;
+}
+
+/* ----------------- End SideBar Section ------------------ */
+
+/* ----------------- Dashboard Section ------------------ */
+
+.dashboard-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 590px;
+    color: #272795;
+    margin-bottom: 50px;
+    transform: translateY(-30px);
+}
+
+.dashboard-title {
+    font-size: 28px;
+}
+
+.dashboard-select {
+    outline: none;
+    margin-right: 15px;
+    border: none;
+    font-size: 14px;
+    height: 20px;
+    color: #272795;
+}
+
+/* ------Dashboard Main left Content------ */
+
+.dashboard {
+    position: relative;
+}
+
+.dashboard-middle {
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-80px);
+    margin: 20px 20px 20px 20px;
+}
+
+.middle-left {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    height: auto;
+    width: 40%;
+    background-color: #f7f9fc;
+    border-radius: 25px;
+}
+
+.heroImg {
+    margin-top: 20px;
+}
+
+.middle-left i {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 22px;
+    color: rgb(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.healthy-leg {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: -30px;
+    bottom: 160px;
+    color: #272795;
+    border-radius: 10px;
+    width: 110px;
+    padding: 10px;
+    font-size: 14px;
+    background-color: rgb(1, 227, 227);
+}
+
+.healthy-heart {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: -55px;
+    top: 115px;
+    color: rgb(255, 255, 255, 0.8);
+    border-radius: 10px;
+    width: 120px;
+    padding: 10px;
+    background-color: #272795;
+}
+
+.healthy-heart img {
+    margin-right: 5px;
+}
+
+.lungs-title {
+    display: flex;
+    align-items: center;
+}
+
+.lungs-title h3 {
+    margin-left: 10px;
+}
+
+/* ------Dashboard Right Content------ */
+
+.middle-right {
+    margin-right: 85px;
+}
+
+.organs {
+    padding: 20px;
+    border-radius: 25px;
+    margin: 15px;
+    padding: 15px 10px 5px 25px;
+    width: 90%;
+    height: auto;
+    background-color: #f7f9fc;
+}
+
+.date {
+    font-size: 14px;
+    color: rgb(0, 0, 0, 0.4);
+}
+
+/* -------Progress Bar Design-------- */
+.progress-contain {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 30px;
+    height: 10px;
+    margin: 20px 0;
+}
+
+.progress-bar {
+    border-radius: 20px;
+    height: 10px;
+    width: 70%;
+    background-color: #a93a3a;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+.progress-bar-2 {
+    background-color: #6dc2b3;
+}
+
+.progress-bar-3 {
+    background-color: #f07a5a;
+}
+
+/* -------End Progress Bar Design-------- */
+
+.details {
+    position: absolute;
+    right: 70px;
+    bottom: 340px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #272795;
+    cursor: pointer;
+}
+
+.details h3 {
+    font-weight: 500;
+}
+
+.details i {
+    margin-left: 10px;
+}
+
+/* --------Activity Content-------- */
+
+.dashboard-bottom {
+    transform: translateY(-50px);
+    border-radius: 20px;
+    padding: 10px 20px 20px 20px;
+    width: 84%;
+    background-color: #f7f9fc;
+    position: relative;
+}
+
+.bottom-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom-header .title {
+    font-size: 20px;
+    color: #272795;
+}
+
+.activity {
+    width: 200px;
+}
+
+.appointment {
+    color: rgb(0, 0, 0, 0.4);
+}
+
+/* ------------- Activity Bar Design------------- */
+
+.bar-group {
+    padding: 15px;
+    display: flex;
+}
+
+.bar-1 {
+    width: 8px;
+    height: 130px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+.bar-2 {
+    width: 7px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: rgb(3, 210, 221);
+    margin: 35px 0 0 12px;
+}
+
+.bar-3 .bar-3-1,
+.bar-3 .bar-3-2 {
+    width: 5px;
+    height: 19.5px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0, 0.2);
+    margin: 60px 0 0 12px;
+}
+
+.bar-3 .bar-3-2 {
+    margin: 5px 0 0 12px;
+}
+
+.bar-4 {
+    width: 7px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0, 0.2);
+    margin: 90px 0 0 12px;
+}
+
+.bar-5-1 {
+    margin: 0 0 10px 12px;
+    background-color: rgb(3, 203, 214);
+}
+
+.bar-5-2 {
+    margin: 0 0 0 12px;
+    background-color: #272795;
+}
+
+.bar-5-1,
+.bar-5-2 {
+    width: 4px;
+    height: 60px;
+    border-radius: 20px;
+}
+
+.bar-6 {
+    background-color: #272795;
+}
+
+.bar-8 {
+    width: 8px;
+    background-color: rgb(3, 203, 214);
+}
+
+.bar-9 {
+    margin-left: 12px;
+}
+
+.bar-10 {
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+.bar-11-1 {
+    width: 5px;
+    height: 17.5px;
+    border-radius: 20px;
+    margin: 60px 0 5px 12px;
+    background-color: rgb(3, 203, 214);
+}
+
+.bar-11-2 {
+    width: 5px;
+    height: 17.5px;
+    border-radius: 20px;
+    margin: 0 0 0 12px;
+    background-color: #272795;
+}
+
+.bar-12 {
+    width: 7px;
+    background-color: #272795;
+}
+
+.bar-13-1 {
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+.bar-13-2 {
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+.bar-15-1 {
+    width: 5px;
+    height: 17.5px;
+    border-radius: 20px;
+    margin: 60px 0 0 12px;
+    background-color: rgb(3, 203, 214);
+}
+
+.bar-15-2 {
+    width: 5px;
+    height: 17.5px;
+    border-radius: 20px;
+    margin: 5px 0 0 12px;
+    background-color: #272795;
+}
+
+.bar-16 {
+    width: 7px;
+}
+
+.bar-17 {
+    width: 7px;
+    margin-left: 12px;
+}
+
+.bar-18 {
+    background-color: #272795;
+}
+
+.bar-20 {
+    width: 6px;
+}
+
+.bar-24 {
+    width: 7px;
+    background-color: #272795;
+}
+
+.bar-26 {
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+.bar-25 {
+    margin-left: 12px;
+}
+
+.bar-27-1 {
+    width: 5px;
+    height: 17.5px;
+    border-radius: 20px;
+    margin: 60px 0 0 12px;
+    background-color: rgb(3, 203, 214);
+}
+
+.bar-27-2 {
+    width: 5px;
+    height: 17.5px;
+    border-radius: 20px;
+    margin: 5px 0 0 12px;
+    background-color: #272795;
+}
+
+.bar-28 {
+    width: 6px;
+    background-color: #272795;
+}
+
+.bar-29-1 {
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+.bar-29-2 {
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+.bar-32 {
+    background-color: #272795;
+}
+
+.weekday {
+    color: rgb(0, 0, 0, 0.4);
+}
+
+.monday {
+    margin-left: 30px;
+}
+
+.weekday span {
+    margin-right: 45px;
+}
+
+/* ----------------- End Dashboard Section ------------------ */
+
+/* ----------------- Sub Dashboard Section ------------------ */
+
+.subdash {
+    position: relative;
+}
+
+.subDashboard-container {
+    margin-left: 10px;
+    width: 540px;
+    height: 1030px;
+    position: absolute;
+    top: -130px;
+    left: -50px;
+    padding-right: 50px;
+    background-color: #f7f9fc;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.subDashboard-top {
+    color: #272795;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subDashboard {
+    position: relative;
+    margin-left: 30px;
+    transform: translateY(115px);
+}
+
+.subDashboard-title {
+    font-size: 16px;
+}
+
+.subDashboard-arrow {
+    margin-right: 5px;
+    font-size: 17px;
+}
+
+.subDashboard-arrow i {
+    cursor: pointer;
+}
+
+
+.subDashboard-arrow .first-arrow {
+    margin-right: 10px;
+}
+
+/* -----------Calender---------- */
+
+.calendar {
+    gap: 10px;
+    display: flex;
+    margin-top: 10px;
+}
+
+.day {
+    color: #272795;
+    padding: 10px;
+    text-align: center;
+    width: 14.28%;
+    font-weight: 600;
+    font-size: 14px;
+    height: 230px;
+}
+
+.day-in-day {
+    margin-bottom: 20px;
+}
+
+.calendar-date {
+    font-size: 22px;
+    margin: 10px 0 30px 0;
+}
+
+.day p {
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.day-2 {
+    border-radius: 20px;
+    padding: 10px 10px;
+    text-align: center;
+    width: 14.28%;
+    background-color: #eef5fc;
+}
+
+/* --------Time-Slot-box-design------- */
+
+.time-slot {
+    background-color: rgb(39, 39, 149);
+    border-radius: 10px;
+    padding: 8px 15px;
+    color: rgb(255, 255, 255, 0.8);
+    transform: translateY(-7px);
+}
+
+.sp-time-slot {
+    height: 17px;
+    background-color: rgb(39, 39, 149, 0.5);
+    border-radius: 10px;
+    padding: 8px 15px;
+    color: rgb(255, 255, 255, 0.8);
+    transform: translateY(-7px);
+}
+
+.wide-time-slot {
+    height: 16px;
+    z-index: 9999;
+    color: rgb(255, 255, 255, 0.8);
+}
+
+.join-box {
+    background-color: #272795;
+    z-index: -1;
+    border-radius: 10px;
+    padding: 16px 15px;
+    width: 90px;
+    position: absolute;
+    right: 0px;
+    top: 145px;
+}
+
+.dot {
+    width: 5px;
+    height: 5px;
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 50%;
+    margin-left: 16px;
+}
+
+.last-time {
+    transform: translateY(-16px);
+}
+
+/* --------End Time-Slot-box-design------- */
+
+/* ----------Doctor Schedule Section---------- */
+
+.dr-schedule {
+    display: flex;
+    margin-top: 25px;
+    gap: 20px;
+
+}
+
+.dentist {
+    color: rgb(255, 255, 255, 0.9);
+    width: 35%;
+    background-color: #272795;
+    padding: 20px;
+    border-radius: 25px;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.dr-name {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.physiotherapy {
+    font-size: 15px;
+    color: #272795;
+    width: 60%;
+    background-color: #e5e9fb;
+    padding: 20px;
+    border-radius: 25px;
+    line-height: 30px;
+}
+
+.dr-title {
+    font-weight: 600;
+}
+
+/* ------------Upcoming Schedule----------- */
+
+.upcoming-schdule {
+    margin-top: 40px;
+    font-size: 15px;
+    color: #272795;
+}
+
+.schedules {
+    display: flex;
+    gap: 20px;
+}
+
+/* ----------Schedule-1----------- */
+
+.schedule-1 {
+    margin-top: 20px;
+    width: 55%;
+    background-color: #e5e9fb;
+    color: #272795;
+    font-weight: 600;
+    padding: 20px;
+    border-radius: 25px;
+    line-height: 30px;
+}
+
+.schedule-2 {
+    width: 35%;
+    margin-top: 20px;
+    background-color: #e5e9fb;
+    color: #272795;
+    font-weight: 600;
+    padding: 20px 20px 20px 20px;
+    border-radius: 25px;
+    line-height: 30px;
+}
+
+.checkup {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chackup-time {
+    font-weight: 500;
+}
+
+.OnDay {
+    color: rgb(0, 0, 0, 0.6);
+}
+
+.opthamolo {
+    gap: 10px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ----------End Schedule-1----------- */
+
+/* ----------Schedul-2----------- */
+.onDay-2 {
+    margin-top: 30px;
+}
+
+.schedules {
+    display: flex;
+}
+
+.cardio {
+    display: flex;
+    justify-content: space-between;
+}
+
+.schedule-3-4 {
+    padding: 20px 30px;
+    width: 30%;
+}
+
+@media screen and (max-width: 1024px) {
+    .header {
+        display: flex;
+        align-items: center;
+        width: 920px;
+        justify-content: space-between;
+    }
+
+    .brandname {
+        /* margin-left: 60px; */
+    }
+
+    .search-bar {
+        width: 00px;
+        margin-left: 100px;
+    }
+
+    .right-content {
+        /* flex-direction: column; */
+    }
+
+    .right-content {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .header-left {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-bar {
+        width: 90%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .header-right {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .main-area {
+        width: 100%;
+        display: flex;
+        margin-left: 300px;
+    }
+
+    .right-content {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 426px){
+    .sidebar{
+        display: none;
+    }
+    .app{
+        width: 100%;
+    }
+    .dashboard{
+        width: 50%;
+        position: absolute;
+        left: 20px;
+    }
+    .subDashboard{
+        width: 70%;
+    }
+}
