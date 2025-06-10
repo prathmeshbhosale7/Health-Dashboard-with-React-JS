@@ -830,7 +830,7 @@ a {
     gap: 20px;
 }
 
-/* ----------Schedule-1----------- */
+/* ----------Schedule 1----------- */
 
 .schedule-1 {
     margin-top: 20px;
@@ -877,7 +877,7 @@ a {
     justify-content: space-between;
 }
 
-/* ----------End Schedule-1----------- */
+/* ----------End Schedule 1------------ */
 
 /* ----------Schedul-2----------- */
 .onDay-2 {
@@ -896,84 +896,4 @@ a {
 .schedule-3-4 {
     padding: 20px 30px;
     width: 30%;
-}
-
-@media screen and (max-width: 1024px) {
-    .header {
-        display: flex;
-        align-items: center;
-        width: 920px;
-        justify-content: space-between;
-    }
-
-    .brandname {
-        /* margin-left: 60px; */
-    }
-
-    .search-bar {
-        width: 00px;
-        margin-left: 100px;
-    }
-
-    .right-content {
-        /* flex-direction: column; */
-    }
-
-    .right-content {
-        display: flex;
-    }
-}
-
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
-    }
-
-    .header-left {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .search-bar {
-        width: 90%;
-        margin-left: 0;
-        margin-top: 10px;
-    }
-
-    .header-right {
-        margin-top: 10px;
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .main-area {
-        width: 100%;
-        display: flex;
-        margin-left: 300px;
-    }
-
-    .right-content {
-        display: flex;
-    }
-}
-
-@media screen and (max-width: 426px){
-    .sidebar{
-        display: none;
-    }
-    .app{
-        width: 100%;
-    }
-    .dashboard{
-        width: 50%;
-        position: absolute;
-        left: 20px;
-    }
-    .subDashboard{
-        width: 70%;
-    }
 }
